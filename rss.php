@@ -165,19 +165,13 @@ class Transmission
 
 // 配置
 $rss = array(
-    'http://chdbits.org/torrentrss.php...',
-    'http://totheglory.im/putrssmc.php...',
-    'https://hdcmct.org/torrentrss.php...',
-    'https://open.cd/torrentrss.php?.....',
-    'https://mv.open.cd/torrentrss.php?..',
-    'http://hdwing.com/rss.php?..........',
-    'http://hdtime.org/torrentrss.php?...'
+    rss_list
 );
-$server = 'http://127.0.0.1';
-$port = 9091;
-$rpcPath = '/transmission/rpc';
-$user = '';
-$password = '';
+$server = 'transmissiondownloadserver';
+$port = transmissiondownloadserverport;
+$rpcPath = 'transmissiondownloadserverpath';
+$user = 'transmissiondownloadserveruser';
+$password = 'transmissiondownloadserverpassword';
 
 $stash = '/tmp/fengqi-transmission-rss';
 !file_exists($stash) && mkdir($stash, 0777, true);
